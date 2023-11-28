@@ -12,6 +12,10 @@ body{
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
+    justify-content: space-around;
+    min-height: 600px;
+    align-items: center;
+
 }
 
 
@@ -26,3 +30,29 @@ body{
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.c1{
+    background-color: aquamarine;
+    order: 3;
+}
+.c2{
+    background-color: lightcoral;
+    order: 1;
+}
+.c3{
+    background-color: blueviolet;
+    order: 4;
+}
+.c4{
+    background-color: darkslateblue;
+    order: 2;
+}
+
+
+
+
+
+
+
+
+
