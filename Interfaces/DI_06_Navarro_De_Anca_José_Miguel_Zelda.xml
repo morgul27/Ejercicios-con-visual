@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<THE_LEGEND_OF_ZELDA>
+    <Juego>
+        <juego1 nombre="The Legend of Zelda"> 
+            <Fecha_de_publicacion>
+                <dia>
+                    21
+                </dia>
+                <mes>
+                    2
+                </mes>
+                <anio>
+                    1986
+                </anio>
+            </Fecha_de_publicacion>
+        </juego1>
+        <juego2 nombre="Link Awakening"> 
+            <Fecha_de_publicacion>
+                <dia>
+                    6
+                </dia>
+                <mes>
+                    6
+                </mes>
+                <anio>
+                    1993
+                </anio>
+            </Fecha_de_publicacion>
+        </juego2>
+        <juego3 nombre="Tears of the Kingdom"> 
+            <Fecha_de_publicacion>
+                <dia>
+                    12
+                </dia>
+                <mes>
+                    5
+                </mes>
+                <anio>
+                    2023
+                </anio>
+            </Fecha_de_publicacion>
+        </juego3>
+    </Juego>
+</THE_LEGEND_OF_ZELDA>

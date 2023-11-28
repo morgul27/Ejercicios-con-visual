@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* selectores
+class .
+id # 
+elemento etiqueta */
+
+body{
+    background-color: rgb(7, 146, 123);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    border: 2px solid brown;
+    margin: 0 auto;
+}
+
+header{
+    background-color: greenyellow;
+    color: blue;
+    text-align: center;
+    height: 280px;
+}
+
+nav ul li{
+    background-color: violet;
+    color: brown;
+    text-align: center;
+    list-style: none;
+    
+}
+
+.seccion1{
+    background-color: azure;
+    color: crimson;
+    min-height: 540px;
+}
+
+
+#s1{
+    color: black;
+}
+
+#s2{
+    color: green;
+}
+
+#s3{
+    color: blue;
+}
+
+
+footer{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    min-height: 43px;
+    line-height: 43px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

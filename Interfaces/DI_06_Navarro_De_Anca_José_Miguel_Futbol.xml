@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Equipos_Futbol>
+    <Equipo>
+        <Nombre>Barcelona</Nombre>
+        <Ciudad>Barcelona</Ciudad>
+        <Entrenador>Pep Guardiola</Entrenador>
+        <Jugadores>
+            <Jugador posicion="portero">
+                <Nombre>Iñaki Peña</Nombre>
+                <Nacionalidad>Español</Nacionalidad>
+            </Jugador>
+            <Jugador posicion="defensa lateral">
+                <Nombre>Sergi Roberto</Nombre>
+                <Nacionalidad>Español</Nacionalidad>
+            </Jugador>
+        </Jugadores>
+    </Equipo>
+    <Equipo>
+        <Nombre>Real Madrid</Nombre>
+        <Ciudad>Madrid</Ciudad>
+        <Entrenador>Carlos Ancelotti</Entrenador>
+        <Jugadores>
+            <Jugador posicion="portero">
+                <Nombre>Lucas Cañizares</Nombre>
+                <Nacionalidad>Español</Nacionalidad>
+            </Jugador>
+            <Jugador posicion="defensa central">
+                <Nombre>David Alaba</Nombre>
+                <Nacionalidad>Austríaca</Nacionalidad>
+            </Jugador>
+        </Jugadores>
+    </Equipo>
+</Equipos_Futbol>
