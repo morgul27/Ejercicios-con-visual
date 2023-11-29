@@ -272,10 +272,11 @@ body {
     border-bottom-left-radius: var(--radius);
 }
 
+
 .container section .contenedor_contenido .generos .cards .card_text {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* centrar letras*/
+    align-items: center; /* para icono */
     padding: 0 20px;
     width: calc(100% - 80px);
 }
