@@ -21,9 +21,7 @@ body {
     margin-bottom: 8rem;
 }
 
-/* ********************************** */
-/*               TOPBAR               */
-/* ********************************** */
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -98,9 +96,7 @@ body {
     transform: scale(1.04);
 }
 
-/* ********************************** */
-/*               SIDEBAR              */
-/* ********************************** */
+
 .navbar {
     background-color: #000;
     color: #b3b3b3;
@@ -240,9 +236,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* ********************************** */
-/*         CONTENIDO PRINCIPAL        */
-/* ********************************** */
+
 .main-content {
     grid-row: 1/3;
     grid-column: 2/-1;
@@ -326,9 +320,7 @@ body {
     -webkit-box-orient: vertical;
 }
 
-/* ********************************** */
-/*               FOOTER               */
-/* ********************************** */
+
 .footer {
     grid-row: 3/4;
     grid-column: 2/-1;
@@ -395,9 +387,7 @@ body {
     font-size: 1.6rem;
 }
 
-/* ********************************** */
-/*            BANNER FINAL            */
-/* ********************************** */
+
 .banner-bottom {
     display: flex;
     justify-content: space-between;
