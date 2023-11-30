@@ -6,20 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/spotify mal.jfif" type="imagen/x-con">
     <title>Spotify</title>
 </head>
 
 <body>
     <div class="container">
         <aside>
-            <div class="menu">
-                <a class="active" href="#"><span><img src="./public/img/home.svg" alt=""></span>Inicio</a>
-                <a href="#"><span><img src="img/search.svg" alt=""></span>Buscar</a>
-                <a href="#"><span><img src="img/library.svg" alt=""></span>Tu biblioteca</a> <br>
-                <a href="#"><span><img src="img/add.svg" alt=""></span>Crear lista</a>
-                <a href="#"><span><img src="img/heart.svg" alt=""></span>Canciones que te gustan</a>
+            <div>
+                <div class="menu">
+                    <a class="active" href="#"><span><img src="./public/img/home.svg" alt=""></span>Inicio</a>
+                    <a href="#"><span><img src="./public/img/search.svg" alt=""></span>Buscar</a>
+                    <a href="#"><span><img src="./public/img/library.svg" alt=""></span>Tu biblioteca</a> <br>
+                    <a href="#"><span><img src="./public/img/add.svg" alt=""></span>Crear lista</a>
+                    <a href="#"><span><img src="./public/img/heart.svg" alt=""></span>Canciones que te gustan</a>
+                </div>
+                <div class="copy">
+                    <p>Politica de privacidad &copy 2023/24</p>
+                    <p>Cookies</p>
+                </div>
             </div>
-            </nav>
         </aside>
         <section>
             <header>
@@ -29,13 +35,11 @@
                 </div>
 
                 <div class="suscribcion">
-                    <div class="mejora_cuenta">
-                        <button>MEJORAR TU CUENTA</button>
+                    <div class="iniciodeSesion">
+                        <a href="./registro.html"><span><button>Iniciar sesion</button> </span></a>
                     </div>
-                    <div class="perfil">
-                        <span class="circulo"><img src="./public/img/user.svg" alt=""></span>
-                        <span class="nombre">Usuario</span>
-                        <span><img src="./public/img/salir.svg" alt=""></span>
+                    <div class="iniciodeSesion">
+                        <a href="./registro.html"><span><button>Registrarse</button> </span></a>
                     </div>
                 </div>
             </header>
@@ -97,7 +101,7 @@
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card_imagen"><img src="./public/img/razielcancion.jpg" alt=""></div> <!--Ozar Midrashim-->
+                        <div class="card_imagen"><img src="./public/img/razielcancion.jpg" alt=""></div>
                         <div class="card_text">
                             <h4>Ozar Midrashim</h4>
                             <img src="./public/img/play.svg" alt="">
@@ -140,7 +144,8 @@
                 </div>
             </div>
         </section>
-        <footer>
+        
+           <footer>
             <div class="controles">
                 <img src="./public/img/prev_footer.svg" alt="">
                 <img src="./public/img/play_footer.svg" alt="">
@@ -151,7 +156,9 @@
                 <div class="barra_progreso"></div>
                 <span>25:00</span>
             </div>
-        </footer>
+        </footer> 
+        
+        
 
     </div>
 </body>
