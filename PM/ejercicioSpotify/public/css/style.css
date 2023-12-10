@@ -56,7 +56,8 @@ body {
     position: relative;
     bottom: -550px;
 }
-.copy p{
+
+.copy p {
     align-self: flex-end;
 }
 
@@ -289,8 +290,10 @@ body {
 
 .container section .contenedor_contenido .generos .cards .card_text {
     display: flex;
-    justify-content: space-between; /* centrar letras*/
-    align-items: center; /* para icono */
+    justify-content: space-between;
+    /* centrar letras*/
+    align-items: center;
+    /* para icono */
     padding: 0 20px;
     width: calc(100% - 80px);
 }
@@ -373,4 +376,72 @@ body {
     background-color: #282828;
     border-radius: var(--radius);
     margin: 0 1em;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrousel {
+    width: 100%;
+}
+
+.conteCarrousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.itemCarrouselArrows>i:hover {
+    cursor: pointer;
+}
+
+
+.conteCarrouselController {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController>a {
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows>a>i {
+    color: white;
 }
