@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <title>Ejercicio1</title>
+     
+      </head>
+      <body>
+      
+        <div class="container">
+          <div class="card" id="card1">
+            <img src="./public/img/descarga.jpg" alt="Imagen Card 1">
+            <h2>Card 1</h2>
+            <p>Texto de la Card 1</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+      
+          <div class="card" id="card2">
+            <img src="./public/img/descarga (1).jpg" alt="Imagen Card 2">
+            <h2>Card 2</h2>
+            <p>Mucho texto de la Card 2</p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+      
+          <div class="card" id="card3">
+            <img src="./public/img/Distintivo_amm.ne_civile_interno.svg" alt="Imagen Card 3">
+            <h2>Card 3</h2>
+            <p>menos texto de la Card 3</p>
+            <a href="#" class="btn">Ver menos</a>
+          </div>
+        </div>
+      
+      </body>
+      </html>
+
+
+
+<!--
+1. Orden de Visualización:
+· ¿Cuál es la propiedad de Flexbox que te permite cambiar el orden visual de los elementos sin cambiar el orden en el HTML?
+Es el codigo order
+
+
+2. Posición Central:
+· ¿Cuál es la propiedad de Flexbox que se puede usar para colocar la Card 1 en el centro del contenedor principal?
+order:2
+
+3. Posición Izquierda:
+· ¿Cómo puedes lograr que la Card 2 se posicione en el extremo izquierdo del contenedor principal utilizando Flexbox?
+.card:nth-child(2){
+    order: 1;
+  }
+
+4. Posición Derecha:
+· ¿Qué propiedad de Flexbox ajustaría la posición de la Card 3 en el extremo derecho del contenedor principal?
+ .card:nth-child(3){
+    order: 3;
+  }
+
+
+5. Alineación Vertical:
+· ¿Cómo podrías centrar verticalmente las cards dentro del contenedor principal utilizando Flexbox?
+align-items: center;
+
+
+6. Espaciado entre Cards:
+· ¿Qué propiedad de Flexbox controlaría el espacio horizontal entre las cards para mejorar la presentación?
+justify-content: space-between;
+
+7. Posición horizontal:
+· ¿Qué propiedad usarías para colocar las cards en fila, pero en orden invertido?
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+8. Justificación Horizontal:
+· ¿Qué propiedad de Flexbox usarías para alinear las cards horizontalmente dentro del contenedor principal?
+ @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .card {
+      width: 100%;
+    }
+  }
+
+
+
+
+9. Distribución de Espacio:
+· ¿Cómo podrías distribuir el espacio disponible de manera uniforme entre las cards utilizando Flexbox? 
+justify-content: space-between;
+
+
+-->
