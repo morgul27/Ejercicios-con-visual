@@ -1,3 +1,4 @@
+package FicherosSocketsTCP;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,10 +8,10 @@ public class clienteTareaTCP {
 
     public static void main(String[] args) {
         final String DIRECCION_SERVIDOR = "localhost";
-        final int PUERTO = 12345;
+        final int PUERTO = 8080;
 
         try (Socket socket = new Socket(DIRECCION_SERVIDOR, PUERTO);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
 
             System.out.println("Conectado al servidor. Ingrese la ruta completa del fichero:");
 
