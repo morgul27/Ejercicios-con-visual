@@ -12,7 +12,7 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 60% auto ;
-    grid-template-rows: 120px 20px 400px auto;
+    grid-template-rows: 120px 40px 400px auto;
     height: 100vh;
     border: 3px solid yellow;
     width: 80%;
