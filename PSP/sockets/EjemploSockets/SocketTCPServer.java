@@ -32,7 +32,7 @@ public class SocketTCPServer {
 	             socket.close(); 
 	             serverSocket.close();
 	             System.out.println("(Servidor) Conexiones cerradas."); 
-	   } 
+	   }
 
 	   public static void main (String [] args){ 
 	    

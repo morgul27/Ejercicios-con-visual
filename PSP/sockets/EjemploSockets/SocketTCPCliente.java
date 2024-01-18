@@ -1,4 +1,5 @@
 package EjemploSockets;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -42,8 +43,6 @@ public class SocketTCPCliente {
             SocketTCPCliente cliente = new SocketTCPCliente("10.88.8.41", 49171);
 
             try {
-
-                  cliente.is.read();
                   cliente.start();
                   cliente.os.write(100);
                   System.out.println("Mensaje del servidor:" + cliente.is.read());
