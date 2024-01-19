@@ -15,8 +15,8 @@ public class Cliente {
     private Socket socket;
     private InputStream is;
     private OutputStream os;
-	private DataInputStream dis;
-	private DataOutputStream dos;
+    private DataInputStream dis;
+    private DataOutputStream dos;
 
     public Cliente(String serverIP, int serverPort) {
 
@@ -28,8 +28,8 @@ public class Cliente {
 
         System.out.println("(Cliente) Estableciendo conexión...");
         socket = new Socket(serverIP, serverPort);
-        os = socket.getOutputStream();
-        is = socket.getInputStream();
+        os = new DataOutputStream(socket.getOutputStream());
+        is = new DataInputStream(socket.getInputStream());
         System.out.println("(Cliente) Conexión establecida.");
     }
 

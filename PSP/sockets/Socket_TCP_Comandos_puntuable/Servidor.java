@@ -16,8 +16,8 @@ public class Servidor {
 	private DataInputStream dis;
 	private DataOutputStream dos;
 
-	public Servidor (int puerto) throws IOException { 
-	    serverSocket = new ServerSocket (puerto); 
+	public Servidor (int puerto) throws IOException {
+	    serverSocket = new ServerSocket (puerto);
 	}
 
 	public void start() throws IOException {
@@ -43,7 +43,7 @@ public class Servidor {
 			Servidor servidor = new Servidor(49171);
 			servidor.start();
 			System.out.println("Mensaje del cliente:");
-			System.out.println("El cliente a enviado el mensaje... " + servidor.dis.readByte());
+			System.out.println("El cliente a enviado el mensaje... " + servidor.dis.read());
 			servidor.os.write(200);
 			servidor.stop();
 
