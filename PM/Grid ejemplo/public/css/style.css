@@ -11,8 +11,13 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 60% auto ;
-    grid-template-rows: 120px 40px 400px auto;
+    /* grid-template-columns: 60% auto ;
+    grid-template-rows: 120px 40px 400px auto; */
+    grid-template-areas: 'header      header'
+                         'nav         nav'                        
+                         'section     aside'
+                         'footer      footer';
+    justify-content: center;
     height: 100vh;
     border: 3px solid yellow;
     width: 80%;
@@ -27,20 +32,31 @@ body{
 .b1{
     background-color: black;
     color: white;
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
+    grid-area: header;
 }
 
 .b2{
     background-color: green;
     color: white;
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
     /* height: 20px; */
+    grid-area: nav;
 }
 
+
+.b3{
+    grid-area: section;
+}
+
+.b4{
+    grid-area: aside;
+}
 .b5{
     background-color: black;
     color: white;
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
+    grid-area: footer;
 }
 
 
