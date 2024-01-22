@@ -7,18 +7,16 @@
 </head>
 <body>
     <script>
-        const nombre = "Cadena de caracteres";
-        let numero = 100;
-        var variable ="oleeeee";
+        const nombre = prompt ("Escribe tu nombre");
+        const contrasena = prompt ("Escribe tu contraseña");
 
-
-        console.log(nombre); // Cadena de caracteres
-        console.log(numero, variable);
-        console.log(nombre + " tu numero es " + numero + ", si sale " + variable)
-        
+        if(nombre == "123" && contrasena == "111"){
+            alert("Bienvenido, login correcto");
+        }else{
+            alert("login incorrecto");
+        }
     </script>
 
-
-
+<script src = "app.js"></script>
 </body>
 </html>
