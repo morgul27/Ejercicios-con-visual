@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class Cliente {
 
-    private static boolean isValidCommand(String command) {
+    private static boolean validarComandos(String command) {
         return command.equalsIgnoreCase("mem") || command.equalsIgnoreCase("hd") || command.equalsIgnoreCase("salir");
     }
 
@@ -28,7 +28,7 @@ public class Cliente {
                 System.out.print("Ingresa las palabras mem, hd o salir: ");
                 comandos = userInput.readLine();
 
-                if (isValidCommand(comandos)) {
+                if (validarComandos(comandos)) {
                     if (comandos.equalsIgnoreCase("salir")) {
                         break;
                     }

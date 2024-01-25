@@ -22,8 +22,8 @@ public class Server {
 
                     String comandoCliente;
                     while ((comandoCliente = in.readLine()) != null) {
-                        String respuesta = procesarComandoCliente(comandoCliente);
-                        out.println(respuesta);
+                        String respuestaCliente = procesarComando(comandoCliente);
+                        out.println(respuestaCliente);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -36,7 +36,7 @@ public class Server {
         }
     }
 
-    private static String procesarComandoCliente(String comandoCliente) {
+    private static String procesarComando(String comandoCliente) {
         String respuesta = "";
 
         if ("mem".equals(comandoCliente)) {
