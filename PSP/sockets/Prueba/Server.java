@@ -42,7 +42,7 @@ public class Server {
         if ("mem".equals(comandoCliente)) {
             respuesta = obtenerMemoriaDisponible();
         } else if ("hd".equals(comandoCliente)) {
-            respuesta = obtenerEspacioLibreEnDisco();
+            respuesta = obtenerEspacioEnDisco();
         }
 
         return respuesta;
@@ -52,10 +52,6 @@ public class Server {
         Runtime runtime = Runtime.getRuntime();
         long memoriaTotal = runtime.totalMemory() / (1024 * 1024);
         return "Memoria total del sistema: " + memoriaTotal + " MB";
-    }
-
-    private static String obtenerEspacioLibreEnDisco() {
-        return obtenerEspacioEnDisco();
     }
 
     private static String obtenerEspacioEnDisco() {
