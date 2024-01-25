@@ -13,10 +13,10 @@ public class Cliente {
     }
 
     public static void main(String[] args) {
-        String serverAddress = "localhost";
-        int portNumber = 49873;
+        String server = "localhost";
+        int puerto = 49873;
 
-        try (Socket socket = new Socket(serverAddress, portNumber);
+        try (Socket socket = new Socket(server, puerto);
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in))) {
@@ -42,6 +42,7 @@ public class Cliente {
 
             } while (!comandos.equalsIgnoreCase("salir"));
             System.out.print("Desconectando y cerrando servidor");
+            
         } catch (IOException e) {
             e.printStackTrace();
         }

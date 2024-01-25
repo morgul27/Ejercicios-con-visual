@@ -13,7 +13,7 @@ public class Server {
         int puerto = 49873;
 
         try (ServerSocket serverSocket = new ServerSocket(puerto)) {
-            System.out.println("Servidor esperando conexiones en el puerto " + puerto);
+            System.out.println("Servidor esta esperando las conexiones la cliente por el puerto " + puerto);
 
             while (true) {
                 try (Socket clientSocket = serverSocket.accept();
@@ -40,32 +40,26 @@ public class Server {
         String respuesta = "";
 
         if ("mem".equals(comandoCliente)) {
-            respuesta = obtenerMemoriaDisponible();
+            respuesta = obtenerMemoria();
         } else if ("hd".equals(comandoCliente)) {
-            respuesta = obtenerEspacioEnDisco();
+            respuesta = obtenerHD();
         }
 
         return respuesta;
     }
 
-    private static String obtenerMemoriaDisponible() {
-        Runtime runtime = Runtime.getRuntime();
-        long memoriaTotal = runtime.totalMemory() / (1024 * 1024);
-        return "Memoria total del sistema: " + memoriaTotal + " MB";
-    }
-
-    private static String obtenerEspacioEnDisco() {
+    private static String obtenerHD() {
         try {
             ProcessBuilder processBuilder = new ProcessBuilder("cmd", "/c", "wmic logicaldisk get FreeSpace");
             Process process = processBuilder.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             StringBuilder salida = new StringBuilder();
             String linea;
-            boolean headerLeido = false;
+            boolean Leido = false;
 
             while ((linea = reader.readLine()) != null) {
-                if (!headerLeido) {
-                    headerLeido = true;
+                if (!Leido) {
+                    Leido = true;
                     continue;
                 }
 
@@ -82,4 +76,12 @@ public class Server {
             return "Error al obtener el espacio libre en disco.";
         }
     }
+
+    private static String obtenerMemoria() {
+        Runtime runtime = Runtime.getRuntime();
+        long memoriaTotal = runtime.totalMemory() / (1024 * 1024);
+        return "Memoria total del sistema: " + memoriaTotal + " MB";
+    }
+
+    
 }
