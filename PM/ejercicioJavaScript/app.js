@@ -9,6 +9,6 @@ function login(){
 function hacerlogin(){
     const nameUser = document.getElementById("usuario");
     const user = nameUser.value;
-
+    
 }
 
