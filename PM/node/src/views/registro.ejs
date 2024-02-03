@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <%- include ('./partials/head') %>
+        <title>Registro</title>
 </head>
+
 <body>
-    <%- include ('partials/navbar') %>
-    
+    <%- include ('./partials/navbar') %>
+        <main>
+            <div class="registro-container">
+                <h2>Registro de Usuario</h2>
+                <div>
+                    <label for="nombre">Un nombre de usuario que no sea feo:</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Uno de tus dos apellidos:</label>
+                    <br>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="email">Tu correo electrónico más molon:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Pon tu contraseña más segura:</label>
+                    <br>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Registrarse aqui, en este botón</button>
+                </form>
+            </div>
+        </main>
 </body>
+
 </html>
