@@ -1,12 +1,21 @@
 //Importo solo el enrutador desde express
 import { Router } from "express";
+import { home, login, registro, insertUsers } from "../controllers/controllers.js";
+import { pool } from "../db.js";
 
-//inicio de enrutador y almaceno en una constante
+//Inicio de enrutador y almaceno en una constante
 const router = Router();
 
 //rutas
-router.get('/', (req, res) => res.render('home', {title: 'Home'}));
-router.get('/login', (req, res) => res.render('login', {title: 'login'}));
-router.get('/registro', (req, res) => res.render('registro', {title: 'Registro'}));
+router.get('/', home);
+router.get('/login', login);
+router.get('/registro', registro);
+
+router.get('/connect', async (req, res) =>{
+    await pool.query('SELECT 1+1 AS RESULT')
+res.json(result[0])
+});
+
+router.post('/insertUsers', insertUsers)
 
 export default router;

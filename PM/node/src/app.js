@@ -3,12 +3,13 @@ import express from 'express';
 import {dirname} from 'path';
 import { fileURLToPath } from 'url';
 import {join} from 'path';
-import indexRoute from './routes/index.js';
+import indexRoute from './routes/index.js'
+import {PORT} from './config.js'
 
 
 const app = express();
-const port = 3300;
 
+app.use(express.json());
 
 const _dirname = dirname(fileURLToPath(import.meta.url));
 console.log(_dirname);
@@ -20,8 +21,8 @@ app.use(express.static(join(_dirname, 'public')));
 app.use(indexRoute);
 
 //Creamos el server
-app.listen((process.env.PORT || port));
-console.log('el servidor escucha por el puerto ', 3000);
+app.listen(PORT);
+console.log('el servidor escucha por el puerto ', 3300);
 
 //Configurar el motor de plantillas
 app.set('view engine', 'ejs');
